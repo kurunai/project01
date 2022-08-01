@@ -1,0 +1,13 @@
+li{
+    font-size: 20px;
+    font-weight: 700;
+}
+.image,img{
+    width: 100px;
+    border: 1px solid black;  
+}
+a{
+    text-decoration-line: none;
+}
+
+

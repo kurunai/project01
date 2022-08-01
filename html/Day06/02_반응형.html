@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media태그</title>
+    <!-- 일반적으로 iphone/폰 320px pad 768px
+        media쿼리 : 반응형을 위한 핵심 
+     -->
+     <style>
+        .title{
+            font-size: 40px;
+        }
+        /* max : 브라우저를 커질때  변환
+           min : 브라우저를 줄일때  변환 */
+        @media screen and (max-width : 600px) { /* 1. 600px보다 작아지면 */
+            .title{
+                font-size: 20px;    /* 2. font-size를 20px로 주겠다 */
+            }
+        }            
+        
+     </style>
+</head>
+<body>
+    <div class="title">
+        <h1>Hello, World</h1>
+        <h3>font-size 변경</h3>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ReggaeOne;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(250,150,100);
+    text-align: center;      
+}
+.logo img{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.logo h1{
+    padding: 25px;  
+}
+.logo h1 a{
+    font-family: ReggaeOne;
+    color: rgb(250, 70, 30);
+    text-decoration: none;
+}
+@font-face {
+    font-family: ReggaeOne;
+    src: url(/fonts/Reggae_One/ReggaeOne-Regular.ttf);
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(/image/검술명가2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body .login span{
+    padding-top: 50px;
+    font-size: 100px;
+    color: #fa6446;
+    cursor: pointer;
+}
+.login{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.login h1{
+    font-size: 30px;
+    margin: 20px;
+    font-weight: bold;
+    color: rgb(250, 100, 70);
+}
+.login .box{
+    position: relative;
+    display: block;
+}
+.login .box input{
+    width: 300px;
+    height: 50px;
+    border: 2px solid rgb(250, 100, 70);
+    outline: none;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+input::placeholder{
+    color: rgba(250, 150, 100,0.3);
+}
+.btn{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 20px;
+    background: linear-gradient(125deg,#fa9664,#fa6446,#fa9664,#fa6446,#fa9664,#fa6446,#fa9664);
+    background-position: left;
+    background-size: 200%;
+    transition: 0.5s;
+    border: none;
+    border-radius: 5px 5px 5px 5px;
+    cursor: pointer;
+    font-weight: bold;
+  
+}
+.btn:hover{
+    background-position: right;
+}
+.bottom p{
+    display: inline;
+    font-size: 15px;
+    padding: 20px;         
+}
+.bottom p a{
+    text-decoration: none;
+    color: white;
+}
+.bottom p a:hover{
+    color: rgb(250, 100, 70);
+}

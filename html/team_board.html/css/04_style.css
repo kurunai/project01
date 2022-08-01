@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(250,150,100);
+    text-align: center;      
+}
+.logo img{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.logo h1{
+    padding: 25px;  
+}
+.logo h1 a{
+    text-align: center;
+    font-family: ReggaeOne;
+    color: rgb(250, 70, 30);
+    text-decoration: none;
+}
+@font-face {
+    font-family: ReggaeOne;
+    src: url(/fonts/Reggae_One/ReggaeOne-Regular.ttf);
+}
+@font-face {
+    font-family: ReggaeOne;
+    src: url(/fonts/Reggae_One/ReggaeOne-Regular.ttf);
+}
+body{
+    font-family: ReggaeOne;
+    background-color: #fffdcc77;
+    height: 100vh;
+}
+.signup-box{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: rgba(230, 220, 220, 0.5);
+    border: 2px solid red;
+    border-radius: 5px;    
+}
+h1{
+    font-family: NanumBrushScript;
+    text-align: center;
+    padding-top: 15px;
+}
+@font-face {
+    font-family: NanumBrushScript;
+    src: url(/fonts/Nanum_Brush_Script/NanumBrushScript-Regular.ttf);
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid rgb(250, 100, 70);
+    border-radius: 5px;
+    outline: none;
+}
+input[type="button"]{
+    width: 315px;
+    height: 35px;
+    margin-top: 18px;
+    background: linear-gradient(125deg,#fa9664,#fa6446,#fa9664,#fa6446,#fa9664,#fa6446,#fa9664);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+}
+input[type="button"]:hover{
+    color: black;
+    background: linear-gradient(125deg,#fa9664,#fa6446,#fa9664,#fa6446,#fa9664,#fa6446,#fa9664);
+    background-position: left;
+    background-size: 200%;
+    transition: 0.5s;
+    font-weight: bold;
+}
+p{
+    text-align: center;
+    padding-top: 25px;
+    font-size: 15px;
+}
+.bottom{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+.bottom a{
+    color: white;
+}
+.bottom a:hover{
+    color: black;
+}

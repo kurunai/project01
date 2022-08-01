@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position연습문제</title>
+    <!-- 
+
+     -->
+     <style>
+        body{
+            height: 1500px;
+        }
+        .box{
+            background-color: brown;
+            color: white;
+            font-size: 20px;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center; 
+            position: relative;           
+        }
+        .fix{
+            width: 50px;
+            height: 30px;
+            border: 1px solid black;
+            background-color: blue;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 5px 5px 5px lightgrey;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            
+        }
+        .box:hover{
+            background-color: yellow;
+            color: black;
+            top: 10px;
+            right: 10px; /* left */
+            cursor: pointer;
+        }
+
+     </style>
+</head>
+<body id="top">
+    <div class="p-box">
+        <div class="box">T</div>
+        <div class="box">H</div>
+        <div class="box">A</div>
+        <div class="box">N</div>
+        <div class="box">K</div>
+        <div class="box">S</div>
+        
+        <a href="#top"><div class="fix">TOP</div></a>
+    </div>
+</body>
+</html>

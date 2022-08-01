@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imgsrc</title>
+</head>
+<body>
+    <img id="pic" src="/image/울산대왕암.jpg" alt="">
+    <script>
+        let pic = document.getElementById('pic');
+        pic.addEventListener('mouseover',changePic);
+        pic.addEventListener('mouseout', originPic);
+
+        function changePic(){
+            pic.src="/image/제주도성산일출봉.jpg";
+        }
+        function originPic(){
+            pic.src="/image/울산대왕암.jpg";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display-tabl</title>
+    <style>
+        /* .boxwrap{
+            display: inline-flex;
+            padding: 10px;  
+            box-sizing: border-box;
+            border: 1px solid black;                    
+        }
+        .box{
+            margin: 10px;
+            text-align: center;          
+        }
+        .title_item{
+            font-size: large;
+        } */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .title_item{
+            display: block;
+            font-size: 1em;
+        }
+        .desc_item{
+            font-size: 0.8em;
+        }
+        .title_item, .desc_item{
+            margin-top: 10px;
+        }
+        .boxwrap{
+            display: table;     /* display 형태를 table로 설정 */
+            table-layout: fixed;    /* 테이블 고정 */
+            width: 100%;    /* 화면 전체 크기 */
+            /* background-color: antiquewhite; */
+        }
+        .boxwrap .box{
+            /* border: 1px solid black; */
+            display: table-cell;  /* 부모 속성안에 들어가는 표안의 셀 */
+            vertical-align: middle;  /* 셀안의 내용을 세로 가운데 정렬 */
+            text-align: center;  /* 글자 가운데 정렬 */
+            padding: 10px;
+        }
+        .thumd img{
+            width:100%;  /* 이미지 가로너비 조절 */
+        }
+    </style>
+</head>
+<body>
+    <div class="boxwrap">
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지1.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 그린색 반바지</p>
+        </div>
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지2.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 파란색 반바지</p>
+        </div>
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지3.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 블루색 린넨 반바지</p>
+        </div>
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지4.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 검정색 반바지</p>
+        </div>
+    </div>
+    <!-- <div class="boxwrap">
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지1.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 그린색 반바지</p>
+        </div>
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지2.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 파란색 반바지</p>
+        </div>
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지3.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 블루색 린넨 반바지</p>
+        </div>
+        <div class="box">
+            <span class="thumd">
+                <img src="/image/반바지4.jpg" alt="">
+            </span>
+            <strong class="title_item">여름 반바지</strong>
+            <p class="desc_item">여름철 시원한 남성 검정색 반바지</p>
+        </div>
+    </div> -->
+</body>
+</html>

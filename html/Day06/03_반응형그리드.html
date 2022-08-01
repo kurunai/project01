@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형Grid</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100%;
+        }
+        .header{
+            height: 60px;
+            background-color: azure;
+        }
+        .main-img{
+            height: 350px;
+            background-color: bisque;
+        }
+        .subject{
+            height: 350px;
+            background-color: aqua;
+        }
+        .content{
+            height: 380px;
+            background-color: chocolate;
+        }
+        .sub{
+            height: 200px;
+            background-color: aquamarine;
+        }
+        .footer{
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+        @media screen and (min-width:600px) {
+            .header{
+                height: 60px;
+            }
+            .main-img{
+                height: 550px;
+            }
+            .subject{
+                height: 320px;
+            }
+            .content{
+                width: 50%;
+                float: left;
+                height: 400px;
+            }
+            .sub{
+                width: 50%;
+                float: left;
+                height: 400px;
+            }
+            .footer{
+                clear: both;
+                height: 200px;
+            }
+        }
+        @media screen and (min-width:800px) {
+            .header{
+                height: 60px;
+            }
+            .main-img{
+                height: 600px;
+            }
+            .subject{
+                width: 50%;
+                float: left;
+                height: 400px;
+            }
+            .content{
+                width: 50%;
+                float: right;
+                height: 200px;
+            }
+            .sub{
+                width: 50%;
+                float: right;
+                height: 200px;
+            }
+            .footer{
+                clear: both;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">hello</div>
+    <div class="main-img">안녕하세요</div>
+    <div class="subject">굿모닝</div>
+    <div class="content">게임</div>
+    <div class="sub">아침</div>
+    <div class="footer">안녕</div>
+</body>
+</html>

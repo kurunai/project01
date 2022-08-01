@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(250,150,100);
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgba(250,150,100);
+    text-align: center;      
+}
+.logo img{
+    float: left;
+    width: 100px;
+    cursor: pointer;
+}
+.logo img:hover{
+    animation: translate infinite ;
+    width: 150px;
+    height: 150px;
+}
+@keyframes scale {
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(50px,50px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+.logo h1{
+    padding: 25px;  
+}
+.logo h1 a{
+    font-family: ReggaeOne;
+    color: rgb(250, 70, 30);
+    text-decoration: none;
+}
+@font-face {
+    font-family: ReggaeOne;
+    src: url(/fonts/Reggae_One/ReggaeOne-Regular.ttf);
+}
+input[id="menuicon"]{   
+    display: none;
+}
+input[id="menuicon"] + label {
+    float: left;
+    display: block;
+    margin: 30px;
+    width: 60px;
+    height: 50px;
+    position: fixed;
+    cursor: pointer;
+    list-style: none;
+}
+input[id="menuicon"] + label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: white;
+    transition: all .35s;
+}
+input[id="menuicon"] + label span:nth-child(1){
+    top: 0;
+}
+input[id="menuicon"] + label span:nth-child(2){
+    top: 50%;
+    transform: translateY(-50%);
+}
+input[id="menuicon"] + label span:nth-child(3){
+    bottom: 0;
+}
+input[id="menuicon"]:checked + label{
+    z-index: 2;
+}
+input[id="menuicon"]:checked + label span{
+    background: white;
+}
+input[id="menuicon"]:checked + label span:nth-child(1){
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menuicon"]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menuicon"]:checked + label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+div[class="sidebar"]{
+    text-align: center;
+    width: 300px;
+    height: 100%;
+    margin-top: 0;
+    padding-top: 100px;
+    background: black;
+    position: fixed;
+    top: 0;
+    left:-300px;
+    z-index: 1;
+    transition: all .35s;   
+}
+input[id="menuicon"]:checked + label + div{
+    left: 0;
+}
+li{
+    list-style: none;
+    padding-bottom: 50px;
+}
+li a{
+    font-family: ReggaeOne;
+    font-size: 20px;
+    color: white;
+}
+@font-face {
+    font-family: ReggaeOne;
+    src: url(/fonts/Reggae_One/ReggaeOne-Regular.ttf);
+}
+li a:hover{
+    cursor: pointer;
+    font-size: 2em;
+    color: rgb(255, 80, 45);            
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+span{
+    color: white;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(/image/fullFiction.png);
+    background-size: cover;
+}
+.main h2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: rgb(250, 150, 100,0.7);
+    font-size: 50px;
+    text-align: center;
+}
+.slideShow .slides li img{
+      /* 이미지 싸이즈 설정 */
+      width: 300px;
+      height: 300px;
+}
+    /* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow{
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;   
+    /*리스트 형식으로 이미지를 일렬로 
+    정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+    hidden으로 숨겨줘야됨*/
+}
+.slides{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2400px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 0.5s ease-out; 
+    /*ease-out: 점점 느려짐*/
+}
+  
+  /* 첫 번째 슬라이드 가운데에 정렬하기위해
+  첫번째 슬라이드만 margin-left조정 */
+.slides li:first-child{
+    margin-left: 100px;
+}
+  
+  /* 슬라이드들 옆으로 정렬 */
+.slides li:not(:last-child){
+    float: left;
+    margin-right: 100px;
+}
+  
+.slides li{
+    float: left;
+}
+  
+.controller span{
+    position:absolute;
+    background-color: transparent;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    padding: 10px 20px;
+    top: 50%;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+  
+  /* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
+.controller span:hover{
+    background-color: rgba(128, 128, 128, 0.11);
+}
+  
+.prev{
+    left: 10px;
+}
+  
+  /* 이전 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
+.prev:hover{
+    transform: translateX(-10px);
+}
+  
+.next{
+    right: 10px;
+}
+  
+  /* 다음 화살표에 마우스 커서가 올라가 있을때 
+  이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
+.next:hover{
+    transform: translateX(10px);
+}

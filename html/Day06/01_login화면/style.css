@@ -1,0 +1,51 @@
+*{
+    /* 로그인화면 시작 */
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:  rgb(27, 188, 155);
+}
+.container{
+    width: 300px;
+    position: absolute;
+    margin: 0;
+    top: 50%;       /* 박스의 중간 맞추기 */
+    left: 50%;      /* 박스의 중간 맞추기 */
+    transform: translate(-50%, -50%);  /* 박스의 중간 맞추기 */
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px 5px 5px 5px;
+}
+input{
+    padding: 10px;
+}
+.text-field{
+    font-size: 0.75em;
+    border: 0px;
+    width: 100%;
+    /* box-sizing : border-box; 로 설정했기 때문에 100% */
+    margin-bottom: 10px;
+    /* margin: 0px 0px 10px 0px;  위 오른쪽 아래 왼쪽 위와 같은방식 */
+    border-radius: 5px;
+}
+.btn-input{
+    font-size: 00.75em;
+    border: 0px;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    background-color: rgb(27, 188, 155);
+    color: white;
+}
+.links{
+    text-align: center;
+    margin: 0px;
+}
+.links a{
+    font-size: 0.75em;
+    color: rgb(172, 172, 172);
+    /* text-decoration: none;  밑줄 제거 */
+}       /* 로그인화면 마무리 */

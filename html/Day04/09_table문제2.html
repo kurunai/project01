@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table문제2</title>
+    <style>
+        /* table{
+            border-collapse: collapse;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+        }
+        th, td{
+            width: 250px;
+            height: 30px;
+            text-align: center;
+        }
+        thead{
+            border-bottom: 1px solid black;
+            background-color: aqua;
+        } */
+        table{
+            width: 100%;
+            height: 200px;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+            border-collapse: collapse;
+        }
+        thead{
+            border-bottom: 2px solid black;
+            height: 30px;
+        }
+        tbody{
+            text-align: center;
+        }
+        th, td{
+           /* border: 1px solid black; */
+        }
+        .col-1{
+            width: 10%;
+        }
+        .col-2{
+            width: 50%;
+        }
+        .col-3{
+            width: 20%;
+        }
+        .col-4{
+            width: 20%;
+        }
+        tbody>tr:hover{
+            cursor: pointer;        /* 마우스를 올리면 행 색 변경 */
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="col-1">번호</th>
+                <th class="col-2">제목</th>
+                <th class="col-3">작성자</th>
+                <th class="col-4">날짜</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>5</td>
+                <td>게시글입니다.</td>
+                <td>홍길동</td>
+                <td>2020-11-25</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>예제입니다.</td>
+                <td>홍길동</td>
+                <td>2020-11-25</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>연습문제입니다.</td>
+                <td>홍길동</td>
+                <td>2020-11-25</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>공지사항입니다.</td>
+                <td>홍길동</td>
+                <td>2020-11-25</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>게시글입니다.</td>
+                <td>홍길동</td>
+                <td>2020-11-25</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

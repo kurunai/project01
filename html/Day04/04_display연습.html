@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display연습</title>
+    <style>
+       *{
+            margin: 0;
+            padding: 0;
+        }
+        .title_item{
+            display: block;
+            font-size: 1em;
+        }
+        .desc_item{
+            font-size: 0.8em;
+        }
+        .title_item, .desc_item, .price{
+            margin-top: 10px;
+        }
+        .boxwrap{
+            display: table;     
+            table-layout: fixed;    
+            width: 100%;    
+            
+        }
+        .boxwrap .box{
+            
+            display: table-cell;  
+            vertical-align: middle;  
+            text-align: center;  
+            padding: 10px;
+        }
+        .thumd img{
+            width:100%; 
+        }
+        .box .link{
+            text-decoration-line: none;
+            color: black;
+        }
+        .box .link:hover{
+            text-decoration-line: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="boxwrap">
+        <div class="box">
+            <a href="//naver.com" class="link">
+                <span class="thumd">
+                    <img src="/image/반바지1.jpg" alt="">
+                </span>
+                <strong class="title_item">여름 반바지</strong>
+                <p class="desc_item">여름철 시원한 남성 그린색 반바지</p>
+                <p class="price">20,000원</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="//naver.com" class="link">
+                <span class="thumd">
+                    <img src="/image/반바지2.jpg" alt="">
+                </span>
+                <strong class="title_item">여름 반바지</strong>
+                <p class="desc_item">여름철 시원한 남성 파란색 반바지</p>
+                <p class="price">20,000원</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="//naver.com" class="link">
+                <span class="thumd">
+                    <img src="/image/반바지3.jpg" alt="">
+                </span>
+                <strong class="title_item">여름 반바지</strong>
+                <p class="desc_item">여름철 시원한 남성 블루색 린넨 반바지</p>
+                <p class="price">20,000원</p>
+            </a>
+        </div>
+        <div class="box">
+            <a href="//naver.com" class="link">
+                <span class="thumd">
+                    <img src="/image/반바지4.jpg" alt="">
+                </span>
+                <strong class="title_item">여름 반바지</strong>
+                <p class="desc_item">여름철 시원한 남성 검정색 반바지</p>
+                <p class="price">20,000원</p>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
